@@ -1,5 +1,6 @@
 from tkinter import *
 
+# combines each label into a singular widget for ease of placement
 def info_label(root):
     frame = Frame(root, width=100, height=120)
     frame.propagate(False)
@@ -13,6 +14,8 @@ def info_label(root):
     iter.place(relx=0.0, rely=0.0, y=90)
     return frame
 
+# creates each label 
+# OPTIMIZE: possible in a single function i think
 def x_label(root):
     return Label(root, text="middle x: ")
 
