@@ -1,3 +1,0 @@
-# mandelbrot_app
-
-kys
