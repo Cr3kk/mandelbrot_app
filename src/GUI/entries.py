@@ -19,12 +19,16 @@ def info_entry(root):
     
     # creates a get function to combine the values from the entry fields into a single dict
     def get_values():
-        return {
-            "x": float(x.get()),
-            "y": float(y.get()),
-            "scale": float(scale.get()),
-            "iter": int(iter.get())
-        }
+        try:
+            return {
+                "x": float(x.get()),
+                "y": float(y.get()),
+                "scale": float(scale.get()),
+                "iter": int(iter.get()),
+            }
+        except ValueError:
+            print("Please input a valid real number.")
+            return None
     
     return frame, get_values
 
