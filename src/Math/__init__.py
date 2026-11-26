@@ -1,2 +1,2 @@
-from .mandol_number import *
+from .turn_to_color import *
 from .mandol_set import *
